@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Booki</title>
-
     <!-- FONT AWESOME -->
     <link
       rel="stylesheet"
@@ -14,7 +13,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
     <!-- GOOGLE FONT RALEWAY -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,13 +20,12 @@
       href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
       rel="stylesheet"
     />
-
     <!-- STYLE CSS -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- HEADER -->
-    <header>
+    <header id="header">
       <div class="logo">
         <a href="#"><img src="./assets/logo/Logo.png" alt="" /></a>
       </div>
@@ -42,7 +39,7 @@
     <main>
       <!-- SECTION DE RECHERCHE -->
       <section id="search">
-        <form>
+        <form id="search-form">
           <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
           <p>En plein centre ville ou en pleine campagne</p>
           <div class="input-search">
@@ -53,7 +50,7 @@
               id="city-search"
               value="Marseille, France"
             />
-            <button class="btn search">Rechercher</button>
+            <button id="btn-search">Rechercher</button>
           </div>
         </form>
       </section>
@@ -86,7 +83,7 @@
         </div>
       </section>
       <section id="hotels-marseille">
-        <article id="all-hotels">
+        <div id="all-hotels">
           <div class="all-hotels-title">
             <h2>Hébergements à Marseille</h2>
           </div>
@@ -199,7 +196,7 @@
           <div class="all-hotels-title">
             <h3>Afficher plus</h3>
           </div>
-        </article>
+        </div>
         <article id="most-popular">
           <div class="most-popular-title">
             <h2>Les plus populaires</h2>
@@ -305,7 +302,7 @@
         </article>
       </section>
     </main>
-    <footer>
+    <footer id="footer">
       <div class="about">
         <h3>A propos</h3>
         <ul>

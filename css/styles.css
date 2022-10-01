@@ -6,7 +6,6 @@
   text-decoration: none;
   font-family: 'Raleway';
   color: black;
-  max-width: 1440px;
 }
 
 /* VARIABLE IMPERATIF */
@@ -14,6 +13,9 @@
   --color-blue: #0065fc;
   --color-ligth-blue: #deebff;
   --color-grey: #f2f2f2;
+}
+main {
+  width: 100vw;
 }
 
 /* FONT STYLE */
@@ -39,7 +41,7 @@ h5 {
 }
 
 /* HEADER */
-header {
+#header {
   display: flex;
   justify-content: space-between;
 }
@@ -63,30 +65,30 @@ header {
 }
 
 /* SECTION SEARCH */
-#search form {
+#search #search-form {
   padding: 0 55px;
 }
 
-#search form div.input-search,
-#search form div.input-search p.location-dot,
-#search form div.input-search input,
-#search form div.input-search button {
+#search #search-form div.input-search,
+#search #search-form div.input-search p.location-dot,
+#search #search-form div.input-search #city-search,
+#search #search-form div.input-search #btn-search {
   display: flex;
   padding: 10px;
   font-weight: 700;
   font-size: 18px;
   padding: 15px 16px;
 }
-#search form div.input-search p.location-dot {
+#search #search-form .input-search p.location-dot {
   justify-content: center;
   background-color: var(--color-grey);
   border-radius: 15px 0 0 15px;
 }
-#search form div.input-search input {
+#search #search-form .input-search #city-search {
   font-weight: 800;
   border: 1px solid var(--color-grey);
 }
-#search form div.input-search button {
+#search #search-form .input-search #btn-search {
   border: none;
   background-color: var(--color-blue);
   color: white;
@@ -276,7 +278,7 @@ header {
 }
 
 /* FOOTER */
-footer {
+#footer {
   display: flex;
   justify-content: space-evenly;
   background-color: var(--color-grey);
@@ -287,6 +289,12 @@ footer {
   transform: translate(-50%);
 }
 
-footer ul li {
+#footer ul li {
   padding: 5px 0;
+}
+
+@media screen and (max-width: 1350px) {
+  main {
+    width: 80%;
+  }
 }
