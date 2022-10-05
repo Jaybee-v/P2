@@ -6,6 +6,7 @@
   text-decoration: none;
   font-family: 'Raleway';
   color: black;
+  max-width: 1400px;
 }
 
 /* VARIABLE IMPERATIF */
@@ -299,6 +300,7 @@ h5 {
   #hotels-marseille {
     align-items: center;
     flex-direction: column;
+    text-align: center;
   }
 
   /* POPULAR */
@@ -330,5 +332,20 @@ h5 {
   }
   .all-activities img {
     width: 182px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #header {
+    flex-direction: column;
+  }
+  #menu {
+    text-align: center;
+    width: 100vw;
+    justify-content: center;
+  }
+  .home {
+    border-top: none;
+    border-bottom: 2px solid var(--color-blue);
   }
 }
