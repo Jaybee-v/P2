@@ -179,7 +179,7 @@ h5 {
 }
 .hotel,
 .popular-hotel {
-  background-color: white;
+  background-color: var(--color-grey);
   padding: 5px;
   margin: 25px 10px;
   border-radius: 20px;
@@ -216,12 +216,14 @@ h5 {
 /* POPULAR */
 #most-popular {
   padding: 30px;
-  width: 100vw;
+  background-color: var(--color-grey);
+  padding: 30px;
+  border-radius: 20px;
 }
 
 .popular-hotel img {
   width: 137px;
-  height: 1px;
+  height: 135px;
   object-fit: cover;
   border-radius: 15px 0 0 15px;
 }
@@ -359,6 +361,10 @@ h5 {
     margin-left: 50%;
     transform: translate(-50%);
   }
+  #filters {
+    display: block;
+  }
+
   #filters .filter p.text {
     font-size: 11px;
   }
