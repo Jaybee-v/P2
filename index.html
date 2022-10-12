@@ -21,7 +21,7 @@
       rel="stylesheet"
     />
     <!-- STYLE CSS -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/style2.css" />
   </head>
   <body>
     <!-- HEADER -->
@@ -50,7 +50,10 @@
               id="city-search"
               value="Marseille, France"
             />
-            <button id="btn-search">Rechercher</button>
+            <button class="btn-search">Rechercher</button>
+            <button class="responsive-btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
           </div>
         </form>
       </section>
@@ -59,22 +62,23 @@
         <div id="filters">
           <h3>Filtres</h3>
           <br />
-          <div class="filter first-line">
-            <p class="icons"><i class="fa-solid fa-money-bill-wave"></i></p>
-            <p class="text">Economique</p>
-          </div>
-          <div class="filter first-line">
-            <p class="icons"><i class="fa-solid fa-child-reaching"></i></p>
-            <p class="text">Familial</p>
-          </div>
-          <br />
-          <div class="filter second-line">
-            <p class="icons"><i class="fa-solid fa-heart"></i></p>
-            <p class="text">Romantique</p>
-          </div>
-          <div class="filter second-line">
-            <p class="icons"><i class="fa-solid fa-dog"></i></p>
-            <p class="text">Animaux autorisés</p>
+          <div id="filters-line">
+            <div class="filter first-line">
+              <p class="icons"><i class="fa-solid fa-money-bill-wave"></i></p>
+              <p class="text">Economique</p>
+            </div>
+            <div class="filter first-line">
+              <p class="icons"><i class="fa-solid fa-child-reaching"></i></p>
+              <p class="text">Familial</p>
+            </div>
+            <div class="filter second-line">
+              <p class="icons"><i class="fa-solid fa-heart"></i></p>
+              <p class="text">Romantique</p>
+            </div>
+            <div class="filter second-line">
+              <p class="icons"><i class="fa-solid fa-dog"></i></p>
+              <p class="text">Animaux autorisés</p>
+            </div>
           </div>
         </div>
         <div class="result">
